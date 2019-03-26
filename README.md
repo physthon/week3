@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Nội dung tuần 3: 
 ##  Trọng tâm của tuần này sẽ là về kĩ thuật lập trình hướng đối tượng và nguyên lí SOLID, tuy nhiên sẽ có thêm 1 vài chi tiết nhỏ như thiết kế giao diện web để có cái nhìn về 1 phần mềm rõ ràng hơn.
 ### 1. Single Responsibility Principle
