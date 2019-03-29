@@ -18,8 +18,9 @@ class Classical(Mechanic):
     
     # Do tất cả các thuộc tính của lớp cha là private nên ta cũng không thể gọi trực tiếp được thuộc tính
     # đó. Đây là lý do mà ta xây dựng phương thức get() để nhận các giá trị private trong lớp cha.
-    def __init__(self,mass = None,coordinate = None,speed = None,force = None , time = None):
+    def __init__(self,mass = None,coordinate = None,speed = None,a = None,force = None , time = None):
         super().__init__(mass=mass,coordinate= coordinate,speed = speed)
+        self.__a = a
         self.__force = force
         self.__time = time
 
@@ -36,13 +37,22 @@ class Classical(Mechanic):
             return self.__energy
         else:
             return self.ERROR()
-    
+    # Gán và nhận các giá trị gia tốc
+    def set_accelation(self,a):
+        self.__a = a
+
+    def get_accelation(self):
+        return self.__a
     # Gán và nhận các giá trị cho lực
     def set_force(self,force):
         if(force != None):
             self.__force = force
         else:
             return self.ERROR()
+
+    def cal_force(self):
+        if(self.__a != None):
+            self.__force = self.__a * self.get_mass()
 
     def get_force(self):
         if(self.__force != None):
