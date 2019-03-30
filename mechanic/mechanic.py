@@ -1,3 +1,5 @@
+# coding=utf-8
+
 # Ta tạo 1 Interface về cơ học, vì đây là một lớp mô tả không rõ ràng cho 1 hệ vật lý nào,
 # cho nên ta không nhất thiết phải cho thêm các phương thức tính toán vào để làm gì
 # Mục đích của Class này tạo ra là để mô tả một lớp Cơ học hiện hữu những thành phần như thế nào
