@@ -1,3 +1,5 @@
+# coding=utf-8
+
 from flask import Flask, redirect, url_for, render_template, request
 from mechanic.hamilton import Hamilton
 from mechanic.PPotential.harmonic_oscillation import HarmonicOscillation
