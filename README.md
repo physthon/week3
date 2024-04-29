@@ -25,8 +25,18 @@ pip install virtualenv
 ```python
 virtualenv python3 ./venv
 ```
+MacOS
+```python
+python3 -m virtualenv ./venv
+```
+
 3. Từ đây bạn sẽ thấy trong folder chính của mình sẽ xuất hiện 1 folder "venv", tiếp theo ta kích họat folder này. Tiếp tục viết lệnh dưới đây trong CMD ở thư mục chính.
 ```python
 .\venv\Script\activate
 ```
+MacOS
+```python
+./venv/bin/activate
+```
+
 Vậy là đã kích hoạt xong thư viện ảo trong Folder chính của bạn, từ giờ khi cài đặt thư viện bằng cmd trong folder chính thì nó sẽ được cài đặt vào trong folder venv này. Khi bạn di chuyển toàn bộ Folder chính sang 1 máy tính khác thì vẫn còn sử dụng được những thư viện này dù máy tính đó chưa cài đặt.
